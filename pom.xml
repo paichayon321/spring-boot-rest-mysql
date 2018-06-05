@@ -133,22 +133,19 @@
 					<addResources>false</addResources>
 				</configuration>
 			</plugin>
-			    <plugin>
-        <groupId>com.spotify</groupId>
+    <plugin>
+      <groupId>io.fabric8</groupId>
       <artifactId>docker-maven-plugin</artifactId>
-      <version>1</version>
+      <version>0.16.7</version>
       <configuration>
-        <imageName>spring-boot-rest-example</imageName>
-        <baseImage>java</baseImage>
-        <entryPoint>["java", "-jar", "/${project.build.finalName}.war"]</entryPoint>
-        <!-- copy the service's jar file from target into the root directory of the image --> 
-        <resources>
-           <resource>
-             <targetPath>/</targetPath>
-             <directory>${project.build.directory}</directory>
-             <include>${project.build.finalName}.jar</include>
-           </resource>
-        </resources>
+        <images>
+          <image>
+            <name>spring-boot-rest-example:${project.version}</name>
+            <build>
+              <dockerFileDir>${project.basedir}</dockerFileDir>
+            </build>
+          </image>
+        </images>
       </configuration>
     </plugin>
 		</plugins>
