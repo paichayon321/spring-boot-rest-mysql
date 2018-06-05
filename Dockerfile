@@ -1,8 +1,7 @@
 FROM openjdk:8-jre-alpine
 
 WORKDIR application
-COPY lib lib
-COPY ./target/maven-docker-example-0.0.1-SNAPSHOT.jar maven-docker-example-0.0.1-SNAPSHOT.jar
+COPY ./target/spring-boot-rest-example-0.5.0.war spring-boot-rest-example-0.5.0.war
 
-ENTRYPOINT ["/usr/bin/java", "-jar", "maven-docker-example-0.0.1-SNAPSHOT.jar"]
-EXPOSE 8080
+ENTRYPOINT ["/usr/bin/java", "-jar", "spring-boot-rest-example-0.5.0.war"]
+EXPOSE 8090
