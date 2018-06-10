@@ -33,7 +33,7 @@ public class SwaggerConfig {
     
 
     private ApiInfo apiInfo() {
-        String description = "REST example";
+        String description = "REST example 2";
         return new ApiInfoBuilder()
                 .title("REST example")
                 .description(description)
