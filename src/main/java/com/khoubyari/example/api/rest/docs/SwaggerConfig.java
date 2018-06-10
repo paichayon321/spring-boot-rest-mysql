@@ -40,7 +40,7 @@ public class SwaggerConfig {
                 .termsOfServiceUrl("github")
                 .license("Siamak")
                 .licenseUrl("")
-                .version("1.0")
+                .version("1.1")
  //               .contact(new Contact("siamak"))
                 .build();
     }
