@@ -4,15 +4,15 @@ metadata:
   name: aycap-spring-ingress
 spec:
   rules:
-  - host: app1here.apps.180.222.156.218.xip.io
+  - host: aycap-spring.apps.180.222.156.218.xip.io
     http:
       paths:
       - backend:
-          serviceName: app1here
+          serviceName: aycap-spring
           servicePort: 8090
-  - host: app2here.apps.180.222.156.218.xip.io
+  - host: aycap-spring-91.apps.180.222.156.218.xip.io
     http:
       paths:
       - backend:
-          serviceName: app2here
+          serviceName: aycap-spring-91
           servicePort: 8091
