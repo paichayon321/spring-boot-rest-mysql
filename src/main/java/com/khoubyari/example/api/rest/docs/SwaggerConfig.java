@@ -33,9 +33,9 @@ public class SwaggerConfig {
     
 
     private ApiInfo apiInfo() {
-        String description = "REST example 1:31";
+        String description = "REST example 3:10";
         return new ApiInfoBuilder()
-                .title("REST example 1:31")
+                .title("REST example 3:10")
                 .description(description)
                 .termsOfServiceUrl("github")
                 .license("Siamak")
