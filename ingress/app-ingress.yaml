@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: aycap-spring-ingress
+spec:
+  rules:
+  - host: app1here.apps.180.222.156.218.xip.io
+    http:
+      paths:
+      - backend:
+          serviceName: app1here
+          servicePort: 8090
+  - host: app2here.apps.180.222.156.218.xip.io
+    http:
+      paths:
+      - backend:
+          serviceName: app2here
+          servicePort: 8091
