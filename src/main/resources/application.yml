@@ -60,9 +60,9 @@ spring:
 
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://mysql.aycap.svc/sampledb
-    username: user5AK
-    password: GIgauuEjcbeNSrTH
+    url: jdbc:mysql://mysql/bootexample
+    username: mysqluser
+    password: mysqlpassword
 
   jpa:
     hibernate:
