@@ -147,7 +147,7 @@
         <registryUrl>https://index.docker.io/v1/</registryUrl>
         <images>
           <image>
-            <name>docker.io/paichayon/spring-boot-rest-example:${project.version}</name>
+            <name>docker.io/paichayon/spring-boot-rest-mysql:${project.version}</name>
             <build>
               <dockerFileDir>${project.basedir}</dockerFileDir>
             </build>
