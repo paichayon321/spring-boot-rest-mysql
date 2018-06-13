@@ -4,15 +4,15 @@ metadata:
   name: mysql-aycap-spring-ingress
 spec:
   rules:
-  - host: mysql-aycap-spring.gablekuber.180.222.156.218.xip.io
+  - host: aycap-spring-mysql.gablekuber.180.222.156.218.xip.io
     http:
       paths:
       - backend:
-          serviceName: mysql-aycap-spring
+          serviceName: aycap-spring-mysql
           servicePort: 8090
-  - host: mysql-aycap-spring-91.gablekuber.180.222.156.218.xip.io
+  - host: aycap-spring-91-mysql.gablekuber.180.222.156.218.xip.io
     http:
       paths:
       - backend:
-          serviceName: mysql-aycap-spring-91
+          serviceName: aycap-spring-91-mysql
           servicePort: 8091
