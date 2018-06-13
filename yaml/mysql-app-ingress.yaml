@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: mysql-aycap-spring-ingress
+spec:
+  rules:
+  - host: mysql-aycap-spring.gablekuber.180.222.156.218.xip.io
+    http:
+      paths:
+      - backend:
+          serviceName: mysql-aycap-spring
+          servicePort: 8090
+  - host: mysql-aycap-spring-91.gablekuber.180.222.156.218.xip.io
+    http:
+      paths:
+      - backend:
+          serviceName: mysql-aycap-spring-91
+          servicePort: 8091
