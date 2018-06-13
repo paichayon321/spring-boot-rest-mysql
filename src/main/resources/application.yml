@@ -60,7 +60,7 @@ spring:
 
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://mysql/bootexample
+    url: jdbc:mysql://mysql:3306/bootexample
     username: mysqluser
     password: mysqlpassword
 
