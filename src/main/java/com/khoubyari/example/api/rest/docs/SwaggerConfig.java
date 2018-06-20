@@ -33,9 +33,9 @@ public class SwaggerConfig {
     
 
     private ApiInfo apiInfo() {
-        String description = "REST example with MYSQL on 200618";
+        String description = "REST example with MYSQL on 200618-1200";
         return new ApiInfoBuilder()
-                .title("REST example with MYSQL on 200618")
+                .title("REST example with MYSQL on 200618-1200")
                 .description(description)
                 .termsOfServiceUrl("github")
                 .license("Siamak")
